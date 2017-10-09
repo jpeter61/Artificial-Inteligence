@@ -1,0 +1,9 @@
+Enter File Name:
+C:\Users\Jamie\Desktop\AI Files\file7
+Furniture: 1 3 7
+
+Weight: 48
+
+Value: 1800
+
+----------------------------------------------------------------

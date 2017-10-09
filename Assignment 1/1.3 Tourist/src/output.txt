@@ -1,0 +1,10 @@
+Enter File Name:
+C:\Users\Jamie\Desktop\AI Files\file5
+
+6 2 3 5 8 4 7 1 6 : 141
+------------------------------------------------------------------------------
+
+Enter File Name:
+C:\Users\Jamie\Desktop\AI Files\file6
+
+4 18 10 15 6 9 14 5 13 20 2 8 11 17 19 3 12 7 16 1 4 : 448
