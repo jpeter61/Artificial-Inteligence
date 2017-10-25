@@ -1,0 +1,100 @@
+2.2.1 f=h
+Enter File Name:
+C:\Users\Jamie\Desktop\AI\Assignment 2\Test Files\file3
+5 7 1
+2 0 8
+4 6 3
+
+5 7 1
+2 6 8
+4 0 3
+
+5 7 1
+2 6 8
+4 3 0
+
+...Shortened to save paper...
+
+0 1 8
+5 4 2
+6 3 7
+
+1 0 8
+5 4 2
+6 3 7
+
+1 4 8
+5 0 2
+6 3 7
+
+
+Steps: 59
+Time: 79 milliseconds
+
+-----------------------------------------------------------
+f=g
+Enter File Name:
+C:\Users\Jamie\Desktop\AI\Assignment 2\Test Files\file3
+5 7 1
+2 0 8
+4 6 3
+
+5 0 1
+2 7 8
+4 6 3
+
+5 1 0
+2 7 8
+4 6 3
+
+5 1 8
+2 7 0
+4 6 3
+
+5 1 8
+2 0 7
+4 6 3
+
+5 1 8
+0 2 7
+4 6 3
+
+5 1 8
+4 2 7
+0 6 3
+
+5 1 8
+4 2 7
+6 0 3
+
+5 1 8
+4 2 7
+6 3 0
+
+5 1 8
+4 2 0
+6 3 7
+
+5 1 8
+4 0 2
+6 3 7
+
+5 1 8
+0 4 2
+6 3 7
+
+0 1 8
+5 4 2
+6 3 7
+
+1 0 8
+5 4 2
+6 3 7
+
+1 4 8
+5 0 2
+6 3 7
+
+
+Steps: 15
+Time: 72920 milliseconds
