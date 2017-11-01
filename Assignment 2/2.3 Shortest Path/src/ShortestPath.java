@@ -24,7 +24,6 @@ public class ShortestPath {
     private int size;           //Number of Vertices
     private Node initial;       //Starting Node
     private Node goal;          //Goal Node
-    private LinkedList<Node> listOfNodes; //List of nodes
 
     //Constructor
     public ShortestPath (int vertices,double[][] coordinates, int[][] edges, int initial, int goal){
