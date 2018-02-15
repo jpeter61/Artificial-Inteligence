@@ -1,0 +1,56 @@
+import java.io.File;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class TSPTester {
+    public static void main(String[] args)throws IOException {
+        Scanner keyIn = new Scanner(System.in);
+
+        System.out.println("Enter File Name:");
+        String fileName = keyIn.nextLine();
+
+        File file = new File(fileName);
+        Scanner sc = new Scanner(file);
+
+        String firstLine[] = sc.nextLine().split(" ");
+        int vertices = Integer.parseInt(firstLine[0]);
+        int edgesCount = Integer.parseInt(firstLine[1]);
+        sc.nextLine();
+        int[][] edges = new int[edgesCount][3];
+        for (int i = 0; i < edgesCount; i++) {
+            String line[] = sc.nextLine().split("\\s+");
+            edges[i][0] = Integer.parseInt(line[0]) - 1;
+            edges[i][1] = Integer.parseInt(line[1]) - 1;
+            edges[i][2] = Integer.parseInt(line[2]);
+        }
+
+        int[][] matrix = matrix(edges, vertices);
+        int maxEdge = max(edges);
+
+        TSP tsp = new TSP(matrix, vertices, maxEdge);
+        tsp.setParameters(100, vertices,5000,
+                0.8, 0.01, 3156512);
+        tsp.run();
+    }
+
+    private static  int[][] matrix(int[][] edges, int vertices){
+        int[][] matrix = new int[vertices][vertices];
+        for(int i = 0; i < edges.length; i++){
+            int u = edges[i][0];                        //place weights
+            int v = edges[i][1];
+            int weight = edges[i][2];
+            matrix[u][v] = weight;
+            matrix[v][u] = weight;
+        }
+        return matrix;
+    }
+
+    private static int max(int[][] edges){
+        int max = 0;
+        for (int i = 0; i < edges.length; i++){
+            if (max < edges[i][2])
+                max = edges[i][2];
+        }
+        return max;
+    }
+}
