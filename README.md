@@ -6,4 +6,4 @@ I worked on some cool projects...
 - State Space Searches
 - Clustering
 - Agent Systems
-- And I even build a Machine Learing algorithm in Java
+- And I even built a Machine Learing algorithm in Java
